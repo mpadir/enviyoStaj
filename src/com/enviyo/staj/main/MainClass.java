@@ -10,26 +10,23 @@ import com.enviyo.staj.team.Team;
 import com.enviyo.staj.team.TeamManager;
 
 public class MainClass {
-	
-	// huseyincakmak6@gmail.com
-	
-	// Garbage Collector
+
 
 	public static void main(String[] args) {
 
-		Club club = new Club("BEŞİKTAŞ");
+		Club club = new Club("BEÃÃKTAÃ");
 		
-		ClubManager clubManager = new ClubManager("Fikret", "Orman",2016, "İŞ ADAMI" );
+		ClubManager clubManager = new ClubManager("Fikret", "Orman",2016, "ÃÃ ADAMI" );
 		
 		club.setClubManager(clubManager);
 		
 		ArrayList<Team> previousTeams = new ArrayList<Team>();
-		previousTeams.add(new Team("Trabzon Spor Takımı"));
+		previousTeams.add(new Team("Trabzon Spor TakÃ½mÃ½"));
 		
-        TeamManager teamManager = new TeamManager("Şenol", "Güneş", 2015, previousTeams );
+        TeamManager teamManager = new TeamManager("Ãenol", "GÃ¼neÃ¾", 2015, previousTeams );
 		
 		
-		HealthAsistant healthAsistant = new HealthAsistant("Mehmet", "Öz", "Stanford");
+		HealthAsistant healthAsistant = new HealthAsistant("Mehmet", "Ã–z", "Stanford");
 		club.setHealthAsistant(healthAsistant);
 		
 		GoalKeeper goalKeeper = new GoalKeeper("Tolga", "Zengin", 29, "Kaleci", 15, 25);
@@ -41,16 +38,16 @@ public class MainClass {
 		playerList.add(Player.createPlayer("Pepe ", "Pepe", 5, "Stoper" ));
 		playerList.add(Player.createPlayer("Fatih ", "Aksoy", 14, "Stoper" ));
 		playerList.add(Player.createPlayer("Adriano ", "Cuanca", 3, "Sol Bek" ));
-		playerList.add(Player.createPlayer("Gökhan ", "Gönül", 77, "Sağ Bek" ));
-		playerList.add(Player.createPlayer("Gary ", "Medel", 12, "Önlibero" ));
-		playerList.add(Player.createPlayer("Oguzhan ", "Özyakup", 10, "Merkez Orta Saha" ));
+		playerList.add(Player.createPlayer("GÃ¶khan ", "GÃ¶nÃ¼l", 77, "SaÃ° Bek" ));
+		playerList.add(Player.createPlayer("Gary ", "Medel", 12, "Ã–nlibero" ));
+		playerList.add(Player.createPlayer("Oguzhan ", "Ã–zyakup", 10, "Merkez Orta Saha" ));
 		playerList.add(Player.createPlayer("Ryan", "Babel", 8, "Sol Kanat" ));
-		playerList.add(Player.createPlayer("Ricardo" , "Quaresma", 7, "Sağ Kanat" ));
-		playerList.add(Player.createPlayer("Álvaro " , "Negredo", 9, "Santrafor" ));
-		playerList.add(Player.createPlayer("Jeremain " ,"Lens", 17, "Sağ Kanat" ));
+		playerList.add(Player.createPlayer("Ricardo" , "Quaresma", 7, "SaÃ° Kanat" ));
+		playerList.add(Player.createPlayer("Ãlvaro " , "Negredo", 9, "Santrafor" ));
+		playerList.add(Player.createPlayer("Jeremain " ,"Lens", 17, "SaÃ° Kanat" ));
 		playerList.add(Player.createPlayer("Mustafa ", "Pektemek", 11, "Santrafor" ));
 		
-		Team team = new Team("Beşiktaş Futbol Takımı", 1903, teamManager, playerList, goalKeeper); 
+		Team team = new Team("BeÃ¾iktaÃ¾ Futbol TakÃ½mÃ½", 1903, teamManager, playerList, goalKeeper); 
 		
 		club.addTeam(team);
 		
