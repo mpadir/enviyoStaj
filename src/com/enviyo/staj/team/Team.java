@@ -34,9 +34,5 @@ public class Team {
 		for (Player player : this.players) {
 			player.printPlayer();
 		}
-	}
-	
-	
-
-		
+	}		
 }
